@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+<!--     <img src="http://i.imgur.com/oleceiKs.jpg"> can also use imgur to upload the image-->
+    <img src="anurag.png">
+    <h1>Anurag's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">When I'm free</a></li>
+    </ul>
+  </header>
+
+  <article>
+    <h2><b><u><big>My first Blog</big></u><b></h2>
+    <div><p>This is my first blog post so assume it as an introduction.In that case I am not going to write much ,if you want to know about me check the "About me" section on my blog.Actually I am very excited to go further and post stories,knowledge etc etc on my blog.So let's get started.All the best to me</p></div>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2><b><u><big>Kotlin</big></u></b></h2>
+    <div><p>Here's the breaking news which came from recent Google I/O confrence that know "KOTLIN" will be new primary language for the android development but that does'n means we will say good bye to java,instead it will be supported as a secondary language and anytime we can convert the kotlin codes to java and vice versa</p></div>
+    <button>Like</button>
+  </article>
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>

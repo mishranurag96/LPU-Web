@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+  <!-- <link href="main.css" rel="stylesheet"> -->
+  <style>
+    header {
+      text-align: center;
+      background: url('https://blog.oup.com/wp-content/uploads/2016/08/tech.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin:40px;
+      border: 2px solid white;
+      height:120px;
+      border-radius: 50%;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255,0,255,0.4);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      
+    }
+    div{
+      background-color: rgba(0,0,255,0.3);
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+<!--     <img src="http://i.imgur.com/oleceiKs.jpg"> -->
+    <img src="anurag.png">
+    <h1>Anurag's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">When I'm free</a></li>
+    </ul>
+  </header>
+
+  <article>
+    <h2><b><u><big>My first Blog</big></u><b></h2>
+    <div><p>This is my first blog post so assume it as an introduction.In that case I am not going to write much ,if you want to know about me check the "About me" section on my blog.Actually I am very excited to go further and post stories,knowledge etc etc on my blog.So let's get started.All the best to me</p></div>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2><b><u><big>Kotlin</big></u></b></h2>
+    <div><p>Here's the breaking news which came from recent Google I/O confrence that know "KOTLIN" will be new primary language for the android development but that does'n means we will say good bye to java,instead it will be supported as a secondary language and anytime we can convert the kotlin codes to java and vice versa</p></div>
+    <button>Like</button>
+  </article>
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
