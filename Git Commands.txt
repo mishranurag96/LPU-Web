@@ -1,0 +1,43 @@
+Git coomands: Needs to run only once after installation of Git
+1. git config --global user.name "Anurag"
+2. git config --global user.email "anurag@cipherschools.com" 
+
+
+
+Needs to run once in every project folder
+3. git init  
+
+
+
+Needs to run repeatedly after any changes being done in the project folder
+4. git add .
+5. git commit -m"version 1.0"
+
+
+
+Needs to run to check if there has been any changes in the project folder
+6. git status
+
+
+
+Needs to run to check all the available versions of the project
+7. git log
+
+
+
+Needs to run once to connect the folder saved in your laptop with the repository created on Github
+8. git remote add origin https://github.com/mishranurag96/First-Year-LPU
+
+
+
+Needs to run every time you want to push the changes to your github repository from the local project folder
+9. git push origin master
+
+
+
+Will help you navigate from one version to another 
+10. git checkout <version code> or git checkout master
+--------------------
+
+GitHub:
+Repository means folder
