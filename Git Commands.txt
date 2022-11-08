@@ -4,13 +4,12 @@ Git coomands: Needs to run only once after installation of Git
 
 
 
-
-
 Needs to run once in every project folder
 3. git init
 or
 To make copy of a existing repository to your device
 git clone [url]
+
 
 
 Needs to run repeatedly after any changes being done in the project folder
