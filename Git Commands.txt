@@ -1,12 +1,16 @@
 Git coomands: Needs to run only once after installation of Git
 1. git config --global user.name "Anurag"
-2. git config --global user.email "anurag@cipherschools.com" 
+2. git config --global user.email "anurag@cipherschools.com"
+
+
 
 
 
 Needs to run once in every project folder
-3. git init  
-
+3. git init
+or
+To make copy of a existing repository to your device
+git clone [url]
 
 
 Needs to run repeatedly after any changes being done in the project folder
