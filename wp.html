@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+
+:root {
+  font-size: 15px;
+  --primaryColor: #075E54;
+  --secondaryColor: #AAA9A8;
+  --tertierColor: #25D366;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  margin: 0 1.2em;
+}
+
+header {
+  background-color: var(--primaryColor);
+  padding: 1.4em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header .menu {
+  margin-left: 18px;
+}
+
+.nav-bar {
+  background-color: var(--primaryColor);
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 16% 28% 28% 28%;
+  justify-items: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, .25) 0px 2px 5px -1px, rgba(0, 0, 0, .3) 0px 1px 3px -1px;
+}
+
+.nav {
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.nav.active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+
+.chat {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat .info {
+  display: flex;
+}
+
+.chat .username {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.chat .recent-chat {
+  color: gray;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.chat .recent-chat .read {
+  color: #34B7F1;
+}
+
+.chat .photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.chat .recent-chat-time {
+  font-size: 12px;
+  color: gray;
+}
+
+.contact-button {
+  padding: 1em;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  transform: rotate(0deg);
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 20px;
+  right: 1.2em;
+  background-color: var(--tertierColor);
+}
+
+</style>
+
+    <title>WhatsApp</title>
+    <link rel="icon" type="image/x-icon" href="wp.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  </head>
+
+  <!-- Body section starte here -->
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">WhatsApp</h1>
+        <div>
+          <a role="button" class="bi bi-search icon"></a>
+          <a role="button" class="bi bi-three-dots-vertical icon menu" ></a>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-bar">
+      <span class="bi bi-camera-fill nav"></span>
+      <a role="button" class="nav active">Chats</a>
+      <a role="button" class="nav">Status</a>
+      <a role="button" class="nav">Calls</a>
+    </nav>
+
+    <!-- Chat section starts here -->
+    <!-- chat 1 -->
+    <section class="chats">
+      <div class="container">
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="user-1.jpg" alt="User" />
+            <div>
+              <h6 class="username">Anurag</h6>
+              <p class="recent-chat"><i class="bi bi-check2-all"></i> Yes, i remembered that! 😄</p>
+            </div>
+          </div>
+          <small class="recent-chat-time">
+            04:20 PM
+          </small>
+        </div>
+
+        <!-- chat 2 -->
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="user-2.jpg" alt="User" />
+            <div>
+              <h6 class="username">Cipher</h6>
+              <p class="recent-chat">Do you wanna hangout?</p>
+            </div>
+          </div>
+          <small class="recent-chat-time">
+            10:20 AM
+          </small>
+        </div>
+
+        <!-- chat 3 -->
+
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="user-3.jpg" alt="User" />
+            <div>
+              <h6 class="username">CipherSchools</h6>
+              <p class="recent-chat"><i class="bi bi-check2-all read"></i> Hey bro, time to band! 🥁🎸</p>
+            </div>
+          </div>
+          <small class="recent-chat-time">
+            Yesterday
+          </small>
+        </div>
+
+        <!-- chat 4 -->
+
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="user-4.jpg" alt="User" />
+            <div>
+              <h6 class="username">Schools</h6>
+              <p class="recent-chat">Hey, where are you now? 🙄</p>
+            </div>
+          </div>
+          <small class="recent-chat-time">
+            7/22/21
+          </small>
+        </div>
+
+        <!-- chat 5 -->
+
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="user-5.jpg" alt="User" />
+            <div>
+              <h6 class="username">Anurag CS</h6>
+              <p class="recent-chat"><i class="bi bi-check2-all read"></i> May i borrow your games for 2 weeks?</p>
+            </div>
+          </div>
+          <small class="recent-chat-time">
+            7/22/21
+          </small>
+        </div>
+
+        <!-- Contact button on the whatsapp -->
+        <button type="button" class="bi bi-chat-right-text-fill contact-button"></button>
+      </div>
+    </section>
+  </body>
+</html>
