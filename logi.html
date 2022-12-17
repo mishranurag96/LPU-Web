@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	<!-- HTML code -->
+<form>
+  Email: <input type="text" id="email"><br>
+  Password: <input type="password" id="password"><br>
+  <button type="button" id="button">Submit</button>
+</form>
+<script type="text/javascript">
+	// JavaScript code
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+
+const button = document.getElementById("button");
+button.addEventListener("click", function() {
+  const email = emailInput.value;
+  const password = passwordInput.value;
+
+  const correctEmail = "user@example.com";
+  const correctPassword = "password";
+
+  if (email === correctEmail && password === correctPassword) {
+    window.open("wp.html");
+  }
+});
+
+</script>
+</body>
+</html>

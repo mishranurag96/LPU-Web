@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<form name="calculator">
+		Number 1: <input type="text" name="number1">
+		Number 2: <input type="text" name="number2">
+
+		Result: <input type="text" name="total">
+		<input type="button" value="Add" onclick="addition();">
+		<input type="button" value="Sub" onclick="subtraction();">
+		<input type="button" value="Mul">
+		<input type="button" value="Div">
+	</form>
+<script>
+	function addition(){
+		var a = Number(document.calculator.number1.value);
+		var b = Number(document.calculator.number2.value);
+		var sum = a + b;
+		document.calculator.total.value = sum;
+	}
+	function subtraction(){
+		var a = Number(document.calculator.number1.value);
+		var b = Number(document.calculator.number2.value);
+		var sub = a - b;
+		document.calculator.total.value = sum;
+	}
+</script>
+</body>
+</html>

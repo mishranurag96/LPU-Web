@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<form name="calculator">
+		<!-- Input boxes -->
+		Number 1: <input type="text" name="num1">
+		Number 2: <input type="text" name="num2">
+		Result: <input type="text" name="total">
+
+		<!-- Buttons -->
+		<input type="button" value="Add" onclick="addition();">
+		<input type="button" value="Sub" onclick="sub();">
+		<input type="button" value="Mul" onclick="multi();">
+		<input type="button" value="Div" onclick="div();">		
+	</form>
+
+<script type="text/javascript">
+	function addition(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sum = a + b;
+		document.calculator.total.value = sum;
+	}
+		function sub(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var sub = a - b;
+		document.calculator.total.value = sub;
+	}
+		function multi(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var mul = a * b;
+		document.calculator.total.value = mul;
+	}
+		function div(){
+		var a = Number(document.calculator.num1.value);
+		var b = Number(document.calculator.num2.value);
+		var div = a / b;
+		document.calculator.total.value = div;
+	}
+</script>
+</body>
+</html>
